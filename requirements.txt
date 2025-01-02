@@ -1,0 +1,2 @@
+ GEOparse==2.0.4
+ openai==1.35.3
