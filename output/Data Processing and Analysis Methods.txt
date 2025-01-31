@@ -1,0 +1,39 @@
+Definition: NormalizationTechnique(technique)
+Description: Specifies the normalization technique used in the data processing, ensuring data consistency and comparability across samples.
+Example: NormalizationTechnique(RobustMultiArrayAverage)
+
+Definition: StatisticalMethod(method)
+Description: Describes the statistical method applied for data analysis, such as differential expression analysis, clustering, or pathway analysis.
+Example: StatisticalMethod(QuantileNormalization)
+
+Definition: SoftwarePackage(packageName)
+Description: Indicates the software package used for data processing and statistical analysis.
+Example: SoftwarePackage(limma)
+
+Definition: SoftwareVersion(softwareTitle, versionNumber)
+Description: Provides the software version related to data processing and analysis methods, essential for reproducibility and validation.
+Example: SoftwareVersion(AffymetrixPowerTools, 1.12.0)
+
+Definition: TransformationMethod(method)
+Description: Specifies the transformation method used, which is crucial in preparing data for analysis, including log transformation or background correction.
+Example: TransformationMethod(Log2Transformation)
+
+Definition: BackgroundCorrectionMethod(method)
+Description: Details the method used for background correction, a vital step in ensuring accurate signal detection.
+Example: BackgroundCorrectionMethod(NormalExponentialConvolution)
+
+Definition: DetectionPValueMethod(method)
+Description: Defines the method used to compute detection p-values, which assess the significance of the detected probes.
+Example: DetectionPValueMethod(NegativeControl)
+
+Definition: SummarizationMethod(method)
+Description: Describes the approach used for summarizing probe signals, such as median polish or average signal summarization.
+Example: SummarizationMethod(MedianPolish)
+
+Definition: OutlierRemovalMethod(method)
+Description: States the method applied for outlier removal to ensure data quality and reliability.
+Example: OutlierRemovalMethod(PlanarRegionsExclusion)
+
+Definition: BatchEffectCorrection(technique)
+Description: Specifies the technique used to correct batch effects, thus improving data validity and comparability.
+Example: BatchEffectCorrection(ComBat)

@@ -1,0 +1,39 @@
+Definition: QualityMetricCheck(metricCategory, metricValue)
+Description: Represents a check or a threshold for a specific quality metric used in the data, such as read depth, base quality scores, alignment rates, or duplicate rates.
+Example: QualityMetricCheck(ReadDepth, 30x)
+
+Definition: DataFilteringCriterion(filterType, threshold)
+Description: Documents the criteria used for filtering data, specifying the type of filtering applied and the threshold value. For example, it could detail criteria like removing reads with low quality scores.
+Example: DataFilteringCriterion(QualityScore, 20)
+
+Definition: BackgroundCorrectionMethod(method)
+Description: Specifies the method used for correcting background noise in the quality control process.
+Example: BackgroundCorrectionMethod(GenomeStudio)
+
+Definition: DetectionPValueComputation(controlType, method)
+Description: Describes how detection P-values are calculated during quality control, including the type of control and the computational method used.
+Example: DetectionPValueComputation(NegativeControls, NeqcFunction)
+
+Definition: NormalizationProcedure(method)
+Description: Defines the method used for normalizing data as part of the quality control practices.
+Example: NormalizationProcedure(QuantileNormalization)
+
+Definition: SignalEstimationModel(method)
+Description: Details the model used to estimate the signal within the data quality control process.
+Example: SignalEstimationModel(NormalExponentialConvolution)
+
+Definition: LogTransformation(application)
+Description: Indicates whether a log transformation is applied to the data during the quality control process.
+Example: LogTransformation(Enabled)
+
+Definition: ControlProbeExclusion(action)
+Description: Specifies whether control probe data is excluded from the normalized expression matrix during quality control.
+Example: ControlProbeExclusion(Enabled)
+
+Definition: OffsetAddition(valueDescription)
+Description: Describes whether a small offset is added in data normalization processes as part of quality control.
+Example: OffsetAddition(Small)
+
+Definition: SoftwareVersion(softwareTitle, versionNumber)
+Description: Details the version of the software used during the quality control and filtering process to standardize procedures.
+Example: SoftwareVersion(AmbionTotalPrep, 5.0)

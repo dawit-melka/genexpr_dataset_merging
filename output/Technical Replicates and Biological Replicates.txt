@@ -1,0 +1,23 @@
+Definition: replicateType(ExpressionCategory, ReplicateNumber)
+Description: Defines the type of replicates utilized in the study, specifying whether they are Technical or Biological, along with their corresponding sequence number.
+Example: replicateType(Biological, 3)
+
+Definition: replicateCondition(DefiningTrait, ReplicateType)
+Description: Details the specific trait or condition associated with the replicates, categorizing them as Technical or Biological based on the provided attribute.
+Example: replicateCondition(Age5Months, Biological)
+
+Definition: replicateConsistency(TissueRegion, ReplicateNumber)
+Description: Indicates the tissue or organ region and the replicate number, ensuring uniformity in the data collection methods.
+Example: replicateConsistency(HippocampusCA3, Replicate2)
+
+Definition: replicateSet(NumberOfReplicates, ReplicateType)
+Description: Indicates the total count of replicates in the experimental setup, stating whether they are Biological or Technical in nature.
+Example: replicateSet(3, Technical)
+
+Definition: replicatePreparationProtocol(Strain, ProtocolType)
+Description: Provides the specific protocol followed for preparing replicates of a particular strain, with details on the sample preparation methods.
+Example: replicatePreparationProtocol(F344xBN, CRProtocol)
+
+Definition: replicateGivenCondition(TreatmentCondition, ReplicateNumber)
+Description: Specifies the treatment or condition applied to the replicates, along with their respective replicate number.
+Example: replicateGivenCondition(CaloricRestriction, Replicate3)

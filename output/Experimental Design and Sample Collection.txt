@@ -1,0 +1,59 @@
+Definition: ExperimentalCondition(ConditionType, Group)
+Description: Describes the experimental condition categories such as 'young' vs. 'old', or 'control' vs. 'treated' for different experimental groups.
+Example: ExperimentalCondition(Age, Young)
+
+Definition: Organism(Species)
+Description: Documents the species from which samples are derived.
+Example: Organism(Mus musculus)
+
+Definition: Strain(StrainName)
+Description: Specifies the genetic strain of the organism used in the experiment.
+Example: Strain(CB6F1)
+
+Definition: Tissue(TissueType)
+Description: Details the type of tissue or organ from which the sample was derived.
+Example: Tissue(Skin)
+
+Definition: Gender(Sex)
+Description: Provides the gender of the organism from which samples were taken.
+Example: Gender(Male)
+
+Definition: HealthStatus(Status)
+Description: Indicates the health status or condition of the subject, such as 'healthy' or any disease status.
+Example: HealthStatus(Healthy)
+
+Definition: HousingCondition(ConditionDescription)
+Description: Describes the environment and conditions in which the subjects were housed before sample collection.
+Example: HousingCondition(StandardLabConditions)
+
+Definition: CollectionProtocol(ProtocolDescription)
+Description: Describes the method or protocol used for sample collection, including processing steps immediately following collection.
+Example: CollectionProtocol(FrozenInLiquidNitrogenImmediately)
+
+Definition: PopulationSampleDescription(Description)
+Description: Details any specific traits or demographic information about the population from which samples are collected.
+Example: PopulationSampleDescription(Community-dwellingParticipants)
+
+Definition: SampleIsolationMethod(MethodDescription)
+Description: Specifies the technique used for isolating specific cells or samples from the organism.
+Example: SampleIsolationMethod(MagneticBeadsSeparation)
+
+Definition: Age(TimeFrame)
+Description: Indicates the age range or specific age of the organism at the time of sample collection. Specifies age using the TimeFrame format.
+Example: Age(TimeFrame(30, Months))
+
+Definition: SampleStorageCondition(StorageDescription)
+Description: Details how samples were stored post-collection to maintain integrity and prevent degradation.
+Example: SampleStorageCondition(StoredInRNAlater)
+
+Definition: SupplementationDescription(Supplement, Dosage)
+Description: Describes any supplementation treatment given to the subjects, specifying the compound and its dosage.
+Example: SupplementationDescription(R-α-lipoicAcid, Dosage(0.2, PercentWeight))
+
+Definition: ImmuneStatus(StatusDescription)
+Description: Captures information related to the immune system's condition, such as inflammatory status or immune function descriptors.
+Example: ImmuneStatus(Pro-inflammatory)
+
+Definition: TreatmentTime(Duration)
+Description: Indicates the time duration for which treatment was administered, formatted in Duration measure.
+Example: TreatmentTime(Duration(2, Weeks))

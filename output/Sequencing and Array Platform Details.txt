@@ -1,0 +1,35 @@
+Definition: PlatformType(platformID, type)
+Description: Identifies the type of platform used for gene expression profiling, referenced by a unique platform ID.
+Example: PlatformType(GSE1111, "ExpressionProfilingByArray")
+
+Definition: PlatformManufacturer(platformID, manufacturer)
+Description: Specifies the manufacturer of the sequencing or array platform using a unique platform ID.
+Example: PlatformManufacturer(GSM1111, "Illumina")
+
+Definition: PlatformModel(platformID, model)
+Description: Describes the model of the sequencing or array platform utilized, linked to a platform ID.
+Example: PlatformModel(GSM1112, "BeadArrayReader")
+
+Definition: LibraryPreparationProtocol(libraryPrepID, protocolName)
+Description: Indicates the name or type of library preparation protocol, identified by a library preparation ID.
+Example: LibraryPreparationProtocol(LibPrep1234, "IlluminaTotalPrep96RNAAmplificationKit")
+
+Definition: AdapterLigationMethod(protocolID, method)
+Description: Details the method used for adapter ligation during library preparation, identified by a protocol ID.
+Example: AdapterLigationMethod(LibPrep5678, "StandardIlluminaProtocol")
+
+Definition: PCRAmplificationProtocol(protocolID, conditions)
+Description: Provides specifics on the PCR amplification conditions in the library preparation stage, marked by a protocol ID.
+Example: PCRAmplificationProtocol(LibPrep5678, "500NgOfInputTotalRNAAt11uL")
+
+Definition: FragmentationMethod(libraryPrepID, method)
+Description: Conveys the method used for RNA or DNA fragmentation in library preparation, using a library preparation ID.
+Example: FragmentationMethod(LibPrep9101, "TrizolReagent")
+
+Definition: LabelingProtocol(protocolID, labelType)
+Description: Describes the type of labeling protocol employed in the sequencing or array process, tied to a protocol ID.
+Example: LabelingProtocol(LibPrep3456, "Biotin")
+
+Definition: ScanProtocol(platformID, protocol)
+Description: Specifies the scanning protocol used in association with a given sequencing or array platform.
+Example: ScanProtocol(GSM2222, "GeneChip7GScannerProtocol")

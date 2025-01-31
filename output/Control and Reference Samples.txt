@@ -1,0 +1,27 @@
+Definition: includesControlSample(referenceGroup, specificType)
+Description: Specifies whether a study includes a control group and categorizes it into a specific type, such as young vs. old or healthy vs. diseased.
+Example: includesControlSample(youngHealthy, ageComparisonStudy)
+
+Definition: controlSampleCount(sampleType, count)
+Description: Specifies the number of control samples used in the study, differentiated by sample type or category.
+Example: controlSampleCount(healthyAdultBlood, 43)
+
+Definition: controlSampleSpecification(controlType, specificationDetail)
+Description: Details the specification criteria for selecting control samples in the study, often based on criteria such as health status or age.
+Example: controlSampleSpecification(healthyIndividuals, noChronicDiseaseHistory)
+
+Definition: referenceDatasetUtilized(referenceType, datasetTitle)
+Description: Describes the reference dataset employed for comparative study or alignment, specifying the type of reference and the title of the dataset.
+Example: referenceDatasetUtilized(expressionReference, GTExProject)
+
+Definition: referenceGenomicAnnotations(referenceSource, annotationVersion)
+Description: Provides information on the genomic annotations referenced during the study, indicating the source and version of annotation.
+Example: referenceGenomicAnnotations(Ensembl, 103)
+
+Definition: controlSampleHandlingMethod(sampleHandling, protocolTitle)
+Description: Describes the method or protocol used to handle control samples in the study, ensuring consistency and reproducibility.
+Example: controlSampleHandlingMethod(bloodSampleHandling, LeukoLOCKTotalRNAIsolation)
+
+Definition: controlSampleAgeRange(controlGroup, ageRange)
+Description: Provides the age range of the control samples within a specified group, formatted for temporal standardization.
+Example: controlSampleAgeRange(elderlyGroup, TimeFrame(Range(65, 85), Years))
