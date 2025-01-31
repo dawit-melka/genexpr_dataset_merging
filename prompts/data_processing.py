@@ -1,6 +1,8 @@
 data_processing_constitution = """Introduction
 
-This constitution outlines the rules and guidelines that you, as an LLM agent must follow to successfully transform method descriptions into a structured format using a set of predefined First-Order Logic (FOL) predicates. The goal is to ensure consistent, accurate, and comprehensive representation of method descriptions.
+This constitution outlines the rules and guidelines that you, as an LLM agent must follow to successfully transform method descriptions into a structured format 
+using a set of predefined First-Order Logic (FOL) predicates. 
+The goal is to ensure consistent, accurate, and comprehensive representation of method descriptions.
 
 Definitions
 

@@ -1,4 +1,6 @@
-extraction_protocol_constitution = """This constitution outlines the rules and guidelines that you, as an LLM agent must follow to successfully transform extraction protocol descriptions into a structured format using a set of predefined First-Order Logic (FOL) predicates. The goal is to ensure consistent, accurate, and comprehensive representation of extraction protocols.
+extraction_protocol_constitution = """This constitution outlines the rules and guidelines that you, as an LLM agent must follow 
+to successfully transform extraction protocol descriptions into a structured format using a set of predefined First-Order Logic (FOL) predicates. 
+The goal is to ensure consistent, accurate, and comprehensive representation of extraction protocols.
 
 Definitions
 
@@ -9,18 +11,20 @@ Predicates
 
 You must use the following predicates:
 
-Sample Collection and Source
+Sample Collection and Source:
 
 SampleType(Sample)
 CollectionMethod(Method)
 PreservationMethod(Method)
 SourceInformation(Species, TissueType)
-Separation and Isolation Methods
+
+Separation and Isolation Methods:
 
 CellSeparationMethod(Method)
 AutomatedUnitUsed(Unit)
 ManualMethodUsed(Method)
-Kits and Reagents
+
+Kits and Reagents:
 
 KitUsed(Kit)
 ReagentUsed(Reagent)
@@ -52,7 +56,8 @@ Handle Quantitative Information: Explicitly capture all quantitative details suc
 Account for Platform-Specific Details: Include any platform-specific settings or details mentioned in the extraction protocol description.
 Example Transformation
 
-Extraction Protocol Description: "Blood was initially collected in sodium heparin-containing Vacutainer CPTTM cell separation tubes (Becton Dickinson, Rutherford, NJ) to separate peripheral blood mononuclear cells from other elements within 2 hours from blood draw. Subsequently, T cells were isolated with the anti-CD4 coated magnetic beads, respectively, using AutoMACs automated magnetic separation unit (Miltenyi Biotec, Bergisch Gladbach, Germany). DNA and RNA were isolated from samples simultaneously using the AllPrep DNA/RNA Mini Kit (Qiagen, Inc., Hilden, Germany)."
+Extraction Protocol Description: "Blood was initially collected in sodium heparin-containing Vacutainer CPTTM cell separation tubes (Becton Dickinson, Rutherford, NJ) to separate peripheral blood mononuclear cells from other elements within 2 hours from blood draw. 
+Subsequently, T cells were isolated with the anti-CD4 coated magnetic beads, respectively, using AutoMACs automated magnetic separation unit (Miltenyi Biotec, Bergisch Gladbach, Germany). DNA and RNA were isolated from samples simultaneously using the AllPrep DNA/RNA Mini Kit (Qiagen, Inc., Hilden, Germany)."
 
 Transformed Predicates:
 SampleType(Blood)
